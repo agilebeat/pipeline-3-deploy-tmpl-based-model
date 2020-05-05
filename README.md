@@ -6,7 +6,7 @@ AWS lambda deployment for template-based image classifiers
 
 
 ### 2. Running docker image and get container ID
-`docker run -v /home/swilson/.aws:/root/.aws -v /home/swilson/PipeLine-03:/root/classify <IMAGE ID>`  
+`docker run -v /home/swilson/.aws:/root/.aws -v /home/swilson/PipeLine-03:/classify <IMAGE ID>`  
   
 `docker run -v <PATH-TO-YOUR-CREDENTIALS-ON-HOST_MACHINE>/.aws:/root/.aws -v <PATH-TO-YOUR-SERVERLESS-PROJECT>:/root/classify-lambda <IMAGE ID>`
 
@@ -14,7 +14,7 @@ AWS lambda deployment for template-based image classifiers
 `docker exec -it <CONTAINER-ID> /bin/bash`  
 
 For example of model for military area,   
-`root@xxxx:~# cd root/classify/pipeline-3-deploy-tmpl-based-model/mil_area`
+`root@xxxx:~# cd classify/pipeline-3-deploy-tmpl-based-model/mil_area`
 
 ### 4. Create and activate python virtual environment
 `root@xxxx:~/mil_area# python3 -m venv python.venv`  
