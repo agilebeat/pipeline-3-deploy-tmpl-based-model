@@ -1,5 +1,6 @@
 # pipeline-3-deploy-tmpl-based-model
-AWS lambda deployment for template-based image classifiers
+AWS lambda deployment for template-based image classifiers  
+Each model is deployed on its own docker container (one model per container)
 
 ### 1. Build docker images with docker file name
 `docker build -t python36:tmpl_base -f pipeline_3.Dockerfile  .`
