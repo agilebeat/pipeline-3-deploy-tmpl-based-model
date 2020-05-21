@@ -1,5 +1,5 @@
 ################### military area #####################
-POST https://6dqvij8v1i.execute-api.us-east-1.amazonaws.com/prod/infer
+POST https://d5hfzies67.execute-api.us-east-1.amazonaws.com/prod/infer
 Content-Type: application/json
 
 {
